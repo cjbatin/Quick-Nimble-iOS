@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5122266720931FF80022178E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122266620931FF80022178E /* APIManager.swift */; };
+		5129FF4F20D8F43F00020B50 /* london_weather_correct.json in Resources */ = {isa = PBXBuildFile; fileRef = 5129FF4E20D8F43F00020B50 /* london_weather_correct.json */; };
 		5191542620C173B100ECDA00 /* WindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5191542520C173B100ECDA00 /* WindViewModel.swift */; };
+		51E811B120D8F0E600BDCF7F /* CurrentWeatherSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E811B020D8F0E600BDCF7F /* CurrentWeatherSpecs.swift */; };
 		6DD4EB7C2D83DEA058C55D46 /* Pods_WeatherForecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBE87A1B69C15DE413558C7 /* Pods_WeatherForecast.framework */; };
 		7D56A6C64E0FC742B563CD1B /* Pods_WeatherForecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C09E76A5A2A37E03044233 /* Pods_WeatherForecastTests.framework */; };
 		EF81DCE1C71C7BA6B453FA71 /* Pods_WeatherForecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C65E69FD78B2D76A5CAF47 /* Pods_WeatherForecastUITests.framework */; };
@@ -54,7 +56,9 @@
 		4BBE87A1B69C15DE413558C7 /* Pods_WeatherForecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherForecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7404CE33CDEC891A4CB9C6 /* Pods-WeatherForecastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherForecastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherForecastTests/Pods-WeatherForecastTests.release.xcconfig"; sourceTree = "<group>"; };
 		5122266620931FF80022178E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5129FF4E20D8F43F00020B50 /* london_weather_correct.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = london_weather_correct.json; sourceTree = "<group>"; };
 		5191542520C173B100ECDA00 /* WindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindViewModel.swift; sourceTree = "<group>"; };
+		51E811B020D8F0E600BDCF7F /* CurrentWeatherSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSpecs.swift; sourceTree = "<group>"; };
 		6FEC06B8B306023CD20A9893 /* Pods-WeatherForecastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherForecastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherForecastTests/Pods-WeatherForecastTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83C09E76A5A2A37E03044233 /* Pods_WeatherForecastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherForecastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3776DF8BFA31E6F58A10E9A /* Pods-WeatherForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +137,22 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		5129FF4D20D8F38100020B50 /* StubData */ = {
+			isa = PBXGroup;
+			children = (
+				5129FF4E20D8F43F00020B50 /* london_weather_correct.json */,
+			);
+			path = StubData;
+			sourceTree = "<group>";
+		};
+		51E811AF20D8EFDD00BDCF7F /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				51E811B020D8F0E600BDCF7F /* CurrentWeatherSpecs.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
 		DB4FA39E9E62135B2E73B02C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +218,8 @@
 		FC1C27942080EB4E0049EDB8 /* WeatherForecastTests */ = {
 			isa = PBXGroup;
 			children = (
+				5129FF4D20D8F38100020B50 /* StubData */,
+				51E811AF20D8EFDD00BDCF7F /* ModelTests */,
 				FC1C27952080EB4E0049EDB8 /* WeatherForecastTests.swift */,
 				FC1C27972080EB4E0049EDB8 /* Info.plist */,
 			);
@@ -357,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5129FF4F20D8F43F00020B50 /* london_weather_correct.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E811B120D8F0E600BDCF7F /* CurrentWeatherSpecs.swift in Sources */,
 				FC1C27962080EB4E0049EDB8 /* WeatherForecastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
