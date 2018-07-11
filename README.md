@@ -1,6 +1,6 @@
 # Weather Forecast
 
-An example project that accompanies my tutorial on using MVVM in iOS. Tutorial: https://blog.pusher.com/mvvm-ios
+An example project that accompanies my tutorial on using Quick & Nimble in iOS testing. Tutorial: http://blog.pusher.com/quick-nimble-testing-ios/ 
 
 ## Getting Started
 
